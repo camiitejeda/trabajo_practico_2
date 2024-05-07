@@ -14,7 +14,7 @@ public class Main {
 
 		List<Producto> listado = new ArrayList<Producto>();
 		
-		Producto prod01 = new Producto("p01","caracteristica p01",23, OrigenFabricacion.ARGENTINA, Categoria.ELECTROHOGAR);
+		Producto prod01 = new Producto("p01","caracteristica p01",23, OrigenFabricacion.ARGENTINA, Categoria.ELECTROHOGAR, true);
 		
 		Producto prod02 = new Producto();
 		prod02.setCodigo("p02");
