@@ -6,21 +6,31 @@ public class Producto {
 	private double precioU;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
+	private boolean disponible;
 	
 	public Producto() {
 		// TODO Auto-generated constructor stub
 	}	
 
 	public Producto(String codigo, String descripcion, double precioU, OrigenFabricacion origenFabricacion,
-			Categoria categoria) {
+			Categoria categoria, boolean disponible) {
 		this.codigo = codigo;
 		this.descripcion = descripcion;
 		this.precioU = precioU;
 		this.origenFabricacion = origenFabricacion;
 		this.categoria = categoria;
+		this.disponible = disponible;
 	}
 
 
+
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
 
 	public String getCodigo() {
 		return codigo;
